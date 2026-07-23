@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>เวียงแก้ว - ศูนย์กลางราชวงศ์มังราย</title>
+
+    <!-- ใช้ Tailwind CSS ผ่าน CDN เพื่อความสะดวกของสาย Dev -->
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <!-- ฟอนต์ Google Fonts: Prompt (สำหรับหัวข้อ) และ Sarabun (สำหรับเนื้อหาเพื่อให้อ่านง่าย) -->
+    <link href="https://fonts.googleapis.com/css2?family=Prompt:wght@400;600&family=Sarabun:wght@300;400;600&display=swap" rel="stylesheet">
+
+    <!-- ตั้งค่า Theme สีสไตล์ล้านนา -->
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        lanna: {
+                            bg: '#faf8f5',    /* สีพื้นกระดาษเก่า */
+                            text: '#4a3b32',  /* สีน้ำตาลเข้ม */
+                            brick: '#c15a3a', /* สีอิฐแดง */
+                            gold: '#c5a059',  /* สีทองหม่น */
+                            green: '#5c715e'  /* สีเขียวมะกอก */
+                        }
+                    },
+                    fontFamily: {
+                        head: ['Prompt', 'sans-serif'],
+                        body: ['Sarabun', 'sans-serif'],
+                    }
+                }
+            }
+        }
+    </script>
+
+    <style>
+        /* สีพื้นหลังด้านนอกกรณีเปิดบนจอคอมพิวเตอร์ */
+        body { background-color: #e5e5e5; }
+
+        /* Texture ลายกระดาษบางๆ เพิ่มความขลัง */
+        .content-box {
+            background-image: url('https://www.transparenttextures.com/patterns/cream-paper.png');
+        }
+        .border-lanna {
+            border: 1px solid #c5a059;
+        }
+    </style>
+</head>
+<body class="font-body text-lanna-text antialiased">
+
+<!-- Container หลัก (คุมขนาดหน้าจอแบบ Mobile-First) -->
+<div class="max-w-md mx-auto bg-lanna-bg min-h-screen shadow-2xl relative content-box pb-12">
+
+    <!-- ปุ่มเปลี่ยนภาษา (โยงไปหน้า en.html) -->
+    <div class="absolute top-4 right-4 z-10">
+        <a href="en.html" class="bg-white/90 backdrop-blur px-4 py-1.5 rounded-full text-sm font-head text-lanna-brick border border-lanna-gold shadow-sm hover:bg-lanna-gold hover:text-white transition">
+            ENG
+        </a>
+    </div>
+
+    <!-- รูปภาพปก (Hero Image) -->
+    <div class="h-64 bg-lanna-text relative w-full overflow-hidden">
+        <!-- 💡 เปลี่ยน URL ตรง src ด้านล่างนี้เป็นรูปกำแพงอิฐ หรือรูป 3D ของโครงการได้เลยครับ -->
+        <img src="https://images.unsplash.com/photo-1603512891963-12e3e5361099?q=80&w=800&auto=format&fit=crop" class="w-full h-full object-cover opacity-70 grayscale-[30%]" alt="กำแพงอิฐเวียงแก้ว">
+        <!-- ไล่สี Gradient ให้ตัวหนังสือด้านล่างอ่านง่ายขึ้น -->
+        <div class="absolute inset-0 bg-gradient-to-t from-lanna-bg via-transparent to-transparent"></div>
+    </div>
+
+    <!-- ชื่อสถานที่ (Title) -->
+    <div class="px-6 -mt-14 relative z-10 text-center">
+        <h1 class="font-head text-4xl font-semibold text-lanna-brick mb-1 drop-shadow-md">เวียงแก้ว</h1>
+        <h2 class="font-head text-base text-lanna-gold tracking-widest uppercase mt-1">Wiang Kaew</h2>
+        <div class="w-12 h-1 bg-lanna-gold mx-auto mt-4 rounded"></div>
+    </div>
+
+    <!-- ==================== ส่วนเนื้อหาหลัก ==================== -->
+    <div class="px-6 mt-8 space-y-8">
+
+        <!-- Section 1: บทนำ -->
+        <section>
+            <h3 class="font-head text-xl font-semibold text-lanna-brick mb-3 flex items-center justify-center">
+                <span class="text-lanna-gold mr-2">✤</span> ศูนย์กลางราชวงศ์มังราย <span class="text-lanna-gold ml-2">✤</span>
+            </h3>
+            <p class="text-base leading-relaxed text-gray-800 text-justify indent-8">
+                <strong class="text-lanna-text font-semibold">“เวียงแก้ว”</strong> ตั้งอยู่ในกำแพงเมืองเชียงใหม่ ด้านทิศเหนือของเมือง ในพื้นที่ตำบลพระสิงห์ อำเภอเมืองเชียงใหม่ จังหวัดเชียงใหม่ พื้นที่นี้เป็นพระราชวังของราชวงศ์มังรายแห่งล้านนา สร้างขึ้นราวต้นพุทธศตวรรษที่ ๑๙ แผนผังแบ่งเป็นสองส่วน คือวังชั้นนอก (ด้านตะวันออก) และวังชั้นใน (ด้านตะวันตก) วังชั้นในแบ่งออกเป็นวังส่วนเหนือและส่วนใต้
+            </p>
+        </section>
+
+        <!-- Section 2: การขุดค้นพบ (จัดทำเป็นกล่องเด่นๆ) -->
+        <div class="border-lanna p-5 bg-white/60 relative rounded-lg">
+            <div class="absolute -top-3 left-1/2 -translate-x-1/2 bg-lanna-bg px-3 font-head text-sm text-lanna-gold font-semibold tracking-wide w-max">
+                ร่องรอยจากการขุดค้น
+            </div>
+            <p class="text-sm leading-relaxed text-gray-700 mt-2">
+                จากการดำเนินการขุดค้นทางโบราณคดีใน พ.ศ.๒๕๕๘ – ๒๕๖๒ ทำให้ทราบว่าอาคารโบราณสถานที่ปรากฏนี้ คือ <strong class="text-lanna-text">องค์ประกอบของวังชั้นในส่วนใต้</strong> ที่ประกอบด้วย:
+            </p>
+            <ul class="text-sm space-y-2 mt-3 ml-2 font-medium text-gray-800">
+                <li class="flex items-start">
+                    <span class="text-lanna-brick mr-2">✦</span> แนวกำแพงวังด้านใต้, เหนือ และตะวันออก
+                </li>
+                <li class="flex items-start">
+                    <span class="text-lanna-brick mr-2">✦</span> แนวร่องน้ำ และ บ่อน้ำ
+                </li>
+                <li class="flex items-start">
+                    <span class="text-lanna-brick mr-2">✦</span> ฐานรากอาคาร และ หอพระประจำวัง (ท้ายวังชั้นนอก)
+                </li>
+            </ul>
+        </div>
+
+        <!-- Section 3: ไฮไลท์แนวกำแพงและโบราณวัตถุ -->
+        <section>
+            <h3 class="font-head text-lg font-semibold text-lanna-brick mb-2 border-b border-lanna-gold pb-2">
+                ความลับของแนวกำแพงเวียงแก้ว
+            </h3>
+            <p class="text-sm leading-relaxed text-gray-800 text-justify mb-3">
+                พบว่ากำแพงเวียงแก้ววางตัวเบนจากแนวแกนทิศตะวันออกไปทางทิศเหนือประมาณ ๑๐ องศา กำแพงอยู่ลึกจากผิวดินปัจจุบันประมาณ ๐.๘๐ – ๑.๐๐ เมตร (กำแพงทิศใต้ยาว ๑๓๕.๕ เมตร, ทิศเหนือยาว ๑๖๔.๕ เมตร)
+            </p>
+            <p class="text-sm leading-relaxed text-gray-800 text-justify">
+                สร้างโดย <strong class="text-lanna-brick">อิฐขนาดใหญ่พิเศษต่างจากโบราณสถานทุกแห่งของล้านนา</strong> เดิมกำแพงพระราชวังแห่งนี้น่าจะมีความสูงอย่างน้อย ๒.๔๐ เมตร
+            </p>
+
+            <!-- กล่องโบราณวัตถุ -->
+            <div class="mt-4 bg-lanna-green/10 p-4 rounded-md border-l-4 border-lanna-green">
+                <p class="text-sm text-gray-700 leading-relaxed">
+                    <strong class="font-semibold text-lanna-green">โบราณวัตถุที่พบ:</strong> เครื่องถ้วยจีน, เครื่องถ้วยเวียดนาม, เครื่องถ้วยยุโรป, เครื่องถ้วยล้านนา และโบราณวัตถุในครัวเรือน ทำให้ทราบว่าพื้นที่นี้มีการใช้งานต่อเนื่องตั้งแต่ต้นพุทธศตวรรษที่ ๑๙
+                </p>
+            </div>
+        </section>
+
+        <!-- Section 4: จุดเปลี่ยนประวัติศาสตร์ -->
+        <section>
+            <h3 class="font-head text-lg font-semibold text-lanna-brick mb-2 border-b border-lanna-gold pb-2">
+                จากพระราชวังหลวง สู่เรือนจำ
+            </h3>
+            <p class="text-sm leading-relaxed text-gray-800 text-justify">
+                เวียงแก้วใช้งานในฐานะพระราชวังหลวงของอาณาจักร จนกระทั่งสมัยพระเจ้าอินทวิชยานนท์ (พ.ศ.๒๔๑๖-๒๔๓๙) ได้ย้ายมาสร้างที่ประทับแห่งใหม่บริเวณโรงเรียนยุพราช ทางทิศตะวันออก
+            </p>
+            <p class="text-sm leading-relaxed text-gray-800 text-justify mt-2">
+                พื้นที่ของเวียงแก้วส่วนหนึ่งจึงได้เปลี่ยนการใช้งานเป็น <strong class="text-lanna-text">เรือนจำมณฑล</strong> ในราวกลางพุทธศตวรรษที่ ๒๕ เวียงแก้วจึงยุติบทบาทของการเป็นที่ประทับของกษัตริย์เชียงใหม่และพระราชวังของล้านนา แต่นั้นเป็นต้นมา
+            </p>
+        </section>
+
+        <!-- ==================== ส่วนท้าย (Footer / แผนที่) ==================== -->
+        <section class="mt-8 pt-6 border-t border-gray-300 text-center">
+            <!-- ปุ่ม Google Maps -->
+            <a href="https://maps.google.com/?q=เวียงแก้ว+เชียงใหม่" target="_blank" class="inline-block bg-lanna-brick hover:bg-[#a0482d] text-white font-head px-8 py-3 rounded-full text-base font-semibold shadow-lg shadow-lanna-brick/30 transition-all transform hover:scale-105">
+                📍 เปิดพิกัดนำทาง (Google Maps)
+            </a>
+        </section>
+
+    </div>
+</div>
+
+</body>
+</html>
