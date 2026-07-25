@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Wiang Kaew - The Royal Palace of Mangrai Dynasty</title>
+
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <!-- Google Fonts: Prompt & Sarabun -->
+    <link href="https://fonts.googleapis.com/css2?family=Prompt:wght@400;600&family=Sarabun:wght@300;400;600&display=swap" rel="stylesheet">
+
+    <!-- Lanna Theme Config -->
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        lanna: {
+                            bg: '#faf8f5',
+                            text: '#4a3b32',
+                            brick: '#c15a3a',
+                            gold: '#c5a059',
+                            green: '#5c715e'
+                        }
+                    },
+                    fontFamily: {
+                        head: ['Prompt', 'sans-serif'],
+                        body: ['Sarabun', 'sans-serif'],
+                    }
+                }
+            }
+        }
+    </script>
+
+    <style>
+        body { background-color: #e5e5e5; }
+        .content-box {
+            background-image: url('https://www.transparenttextures.com/patterns/cream-paper.png');
+        }
+        .border-lanna {
+            border: 1px solid #c5a059;
+        }
+    </style>
+</head>
+<body class="font-body text-lanna-text antialiased">
+
+<!-- Main Container -->
+<div class="max-w-md mx-auto bg-lanna-bg min-h-screen shadow-2xl relative content-box pb-12">
+
+    <!-- Language Switcher (Links back to Thai index.html) -->
+    <div class="absolute top-4 right-4 z-10">
+        <a href="index.html" class="bg-white/90 backdrop-blur px-4 py-1.5 rounded-full text-sm font-head text-lanna-brick border border-lanna-gold shadow-sm hover:bg-lanna-gold hover:text-white transition">
+            THAI
+        </a>
+    </div>
+
+    <!-- Hero Image -->
+    <div class="h-64 bg-lanna-text relative w-full overflow-hidden">
+        <img src="https://images.unsplash.com/photo-1603512891963-12e3e5361099?q=80&w=800&auto=format&fit=crop" class="w-full h-full object-cover opacity-70 grayscale-[30%]" alt="Wiang Kaew Brick Wall">
+        <div class="absolute inset-0 bg-gradient-to-t from-lanna-bg via-transparent to-transparent"></div>
+    </div>
+
+    <!-- Title -->
+    <div class="px-6 -mt-14 relative z-10 text-center">
+        <h1 class="font-head text-4xl font-semibold text-lanna-brick mb-1 drop-shadow-md">Wiang Kaew</h1>
+        <h2 class="font-head text-sm text-lanna-gold tracking-widest uppercase mt-1">The Royal Palace</h2>
+        <div class="w-12 h-1 bg-lanna-gold mx-auto mt-4 rounded"></div>
+    </div>
+
+    <!-- ==================== Content ==================== -->
+    <div class="px-6 mt-8 space-y-8">
+
+        <!-- Section 1: Introduction -->
+        <section>
+            <h3 class="font-head text-xl font-semibold text-lanna-brick mb-3 flex items-center justify-center">
+                <span class="text-lanna-gold mr-2">✤</span> Mangrai Dynasty <span class="text-lanna-gold ml-2">✤</span>
+            </h3>
+            <p class="text-base leading-relaxed text-gray-800 text-justify indent-8">
+                <strong class="text-lanna-text font-semibold">“Wiang Kaew”</strong> is located in Chiang Mai city wall, almost in the middle of the city, in Phra Sing Subdistrict. The site was the royal palace of Mangrai Dynasty which ruled Lanna Kingdom between the 13th – 16th centuries C.E.
+            </p>
+        </section>
+
+        <!-- Section 2: Archaeological Discoveries -->
+        <div class="border-lanna p-5 bg-white/60 relative rounded-lg">
+            <div class="absolute -top-3 left-1/2 -translate-x-1/2 bg-lanna-bg px-3 font-head text-sm text-lanna-gold font-semibold tracking-wide w-max">
+                Archaeological Discoveries
+            </div>
+            <p class="text-sm leading-relaxed text-gray-700 mt-2 text-justify">
+                The palace complex was divided into two main sections: the Outer Palace (eastern area) and the Inner Palace (western area). Excavations (2015-2019) revealed surviving remains in the southern sector of the Inner Palace, including:
+            </p>
+            <ul class="text-sm space-y-2 mt-3 ml-1 font-medium text-gray-800">
+                <li class="flex items-start">
+                    <span class="text-lanna-brick mr-2">✦</span> The southern, northern, and eastern palace walls
+                </li>
+                <li class="flex items-start">
+                    <span class="text-lanna-brick mr-2">✦</span> A ditch and a well
+                </li>
+                <li class="flex items-start">
+                    <span class="text-lanna-brick mr-2">✦</span> Foundations of a building and the palace chapel (Ho Phra)
+                </li>
+            </ul>
+        </div>
+
+        <!-- Section 3: The Palace Walls & Artefacts -->
+        <section>
+            <h3 class="font-head text-lg font-semibold text-lanna-brick mb-2 border-b border-lanna-gold pb-2">
+                The Palace Walls & Artefacts
+            </h3>
+            <p class="text-sm leading-relaxed text-gray-800 text-justify mb-3">
+                The walls of Wiang Kaew are aligned approximately 10 degrees away from the East–West Axis and lie about 0.80–1.00 metres below the present ground. (Southern wall: 135.5m, Northern wall: 164.5m)
+            </p>
+            <p class="text-sm leading-relaxed text-gray-800 text-justify">
+                The monument was constructed using <strong class="text-lanna-brick">extra-large bricks</strong>, differing from typical Lanna bricks. The walls originally stood at least 2.40 metres high.
+            </p>
+
+            <div class="mt-4 bg-lanna-green/10 p-4 rounded-md border-l-4 border-lanna-green">
+                <p class="text-sm text-gray-700 leading-relaxed">
+                    <strong class="font-semibold text-lanna-green">Recovered Artefacts:</strong> Chinese porcelain, Vietnamese, European, and Lanna ceramics, indicating continuous occupation since the 13th century CE.
+                </p>
+            </div>
+        </section>
+
+        <!-- Section 4: From Palace to Prison -->
+        <section>
+            <h3 class="font-head text-lg font-semibold text-lanna-brick mb-2 border-b border-lanna-gold pb-2">
+                From Royal Palace to Prison
+            </h3>
+            <p class="text-sm leading-relaxed text-gray-800 text-justify">
+                During the reign of King Inthawichayanon (1873–1897 CE), a new royal residence was constructed in the east (now Yupparaj Wittayalai School).
+            </p>
+            <p class="text-sm leading-relaxed text-gray-800 text-justify mt-2">
+                Some south-western areas of Wiang Kaew were converted to the <strong class="text-lanna-text">Provincial Prison</strong> around the 20th century CE. Since that time, Wiang Kaew ceased to serve as the royal palace of the Lanna Kingdom.
+            </p>
+        </section>
+
+        <!-- ==================== Footer / Logo & Map ==================== -->
+        <section class="mt-8 pt-8 border-t border-gray-300 text-center flex flex-col items-center">
+
+            <!-- Fine Arts Department Logo -->
+            <div class="mb-6 flex flex-col items-center">
+                <img src="fine_art.png" alt="Fine Arts Department Logo" class="h-24 w-auto mb-2 mix-blend-multiply opacity-90">
+            </div>
+
+            <!-- Google Maps Button -->
+            <a href="https://www.google.com/maps/place/%E0%B8%82%E0%B9%88%E0%B8%A7%E0%B8%87%E0%B8%AB%E0%B8%A5%E0%B8%A7%E0%B8%87%E0%B9%80%E0%B8%A7%E0%B8%B5%E0%B8%A2%E0%B8%87%E0%B9%81%E0%B8%81%E0%B9%89%E0%B8%A7/@18.7909614,98.9839648,354m" target="_blank" class="inline-block bg-lanna-brick hover:bg-[#a0482d] text-white font-head px-8 py-3 rounded-full text-base font-semibold shadow-lg shadow-lanna-brick/30 transition-all transform hover:scale-105">
+                📍 Open in Google Maps
+            </a>
+
+            <p class="mt-6 text-xs text-gray-500 font-body uppercase tracking-wide">
+                Information by Fine Arts Department
+            </p>
+        </section>
+
+    </div>
+</div>
+
+</body>
+</html>

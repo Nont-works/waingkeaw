@@ -5,10 +5,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>เวียงแก้ว - ศูนย์กลางราชวงศ์มังราย</title>
 
-    <!-- ใช้ Tailwind CSS ผ่าน CDN เพื่อความสะดวกของสาย Dev -->
+    <!-- ใช้ Tailwind CSS ผ่าน CDN -->
     <script src="https://cdn.tailwindcss.com"></script>
 
-    <!-- ฟอนต์ Google Fonts: Prompt (สำหรับหัวข้อ) และ Sarabun (สำหรับเนื้อหาเพื่อให้อ่านง่าย) -->
+    <!-- ฟอนต์ Google Fonts: Prompt & Sarabun -->
     <link href="https://fonts.googleapis.com/css2?family=Prompt:wght@400;600&family=Sarabun:wght@300;400;600&display=swap" rel="stylesheet">
 
     <!-- ตั้งค่า Theme สีสไตล์ล้านนา -->
@@ -18,11 +18,11 @@
                 extend: {
                     colors: {
                         lanna: {
-                            bg: '#faf8f5',    /* สีพื้นกระดาษเก่า */
-                            text: '#4a3b32',  /* สีน้ำตาลเข้ม */
-                            brick: '#c15a3a', /* สีอิฐแดง */
-                            gold: '#c5a059',  /* สีทองหม่น */
-                            green: '#5c715e'  /* สีเขียวมะกอก */
+                            bg: '#faf8f5',
+                            text: '#4a3b32',
+                            brick: '#c15a3a',
+                            gold: '#c5a059',
+                            green: '#5c715e'
                         }
                     },
                     fontFamily: {
@@ -35,10 +35,7 @@
     </script>
 
     <style>
-        /* สีพื้นหลังด้านนอกกรณีเปิดบนจอคอมพิวเตอร์ */
         body { background-color: #e5e5e5; }
-
-        /* Texture ลายกระดาษบางๆ เพิ่มความขลัง */
         .content-box {
             background-image: url('https://www.transparenttextures.com/patterns/cream-paper.png');
         }
@@ -49,7 +46,7 @@
 </head>
 <body class="font-body text-lanna-text antialiased">
 
-<!-- Container หลัก (คุมขนาดหน้าจอแบบ Mobile-First) -->
+<!-- Container หลัก -->
 <div class="max-w-md mx-auto bg-lanna-bg min-h-screen shadow-2xl relative content-box pb-12">
 
     <!-- ปุ่มเปลี่ยนภาษา (โยงไปหน้า en.html) -->
@@ -61,9 +58,7 @@
 
     <!-- รูปภาพปก (Hero Image) -->
     <div class="h-64 bg-lanna-text relative w-full overflow-hidden">
-        <!-- 💡 เปลี่ยน URL ตรง src ด้านล่างนี้เป็นรูปกำแพงอิฐ หรือรูป 3D ของโครงการได้เลยครับ -->
         <img src="https://images.unsplash.com/photo-1603512891963-12e3e5361099?q=80&w=800&auto=format&fit=crop" class="w-full h-full object-cover opacity-70 grayscale-[30%]" alt="กำแพงอิฐเวียงแก้ว">
-        <!-- ไล่สี Gradient ให้ตัวหนังสือด้านล่างอ่านง่ายขึ้น -->
         <div class="absolute inset-0 bg-gradient-to-t from-lanna-bg via-transparent to-transparent"></div>
     </div>
 
@@ -87,7 +82,7 @@
             </p>
         </section>
 
-        <!-- Section 2: การขุดค้นพบ (จัดทำเป็นกล่องเด่นๆ) -->
+        <!-- Section 2: การขุดค้นพบ -->
         <div class="border-lanna p-5 bg-white/60 relative rounded-lg">
             <div class="absolute -top-3 left-1/2 -translate-x-1/2 bg-lanna-bg px-3 font-head text-sm text-lanna-gold font-semibold tracking-wide w-max">
                 ร่องรอยจากการขุดค้น
@@ -120,7 +115,6 @@
                 สร้างโดย <strong class="text-lanna-brick">อิฐขนาดใหญ่พิเศษต่างจากโบราณสถานทุกแห่งของล้านนา</strong> เดิมกำแพงพระราชวังแห่งนี้น่าจะมีความสูงอย่างน้อย ๒.๔๐ เมตร
             </p>
 
-            <!-- กล่องโบราณวัตถุ -->
             <div class="mt-4 bg-lanna-green/10 p-4 rounded-md border-l-4 border-lanna-green">
                 <p class="text-sm text-gray-700 leading-relaxed">
                     <strong class="font-semibold text-lanna-green">โบราณวัตถุที่พบ:</strong> เครื่องถ้วยจีน, เครื่องถ้วยเวียดนาม, เครื่องถ้วยยุโรป, เครื่องถ้วยล้านนา และโบราณวัตถุในครัวเรือน ทำให้ทราบว่าพื้นที่นี้มีการใช้งานต่อเนื่องตั้งแต่ต้นพุทธศตวรรษที่ ๑๙
@@ -141,12 +135,22 @@
             </p>
         </section>
 
-        <!-- ==================== ส่วนท้าย (Footer / แผนที่) ==================== -->
-        <section class="mt-8 pt-6 border-t border-gray-300 text-center">
+        <!-- ==================== ส่วนท้าย (Footer / โลโก้ & แผนที่) ==================== -->
+        <section class="mt-8 pt-8 border-t border-gray-300 text-center flex flex-col items-center">
+
+            <!-- โลโก้กรมศิลปากร -->
+            <div class="mb-6 flex flex-col items-center">
+                <img src="fine_art.png" alt="โลโก้กรมศิลปากร" class="h-24 w-auto mb-2 mix-blend-multiply opacity-90">
+            </div>
+
             <!-- ปุ่ม Google Maps -->
-            <a href="https://maps.google.com/?q=เวียงแก้ว+เชียงใหม่" target="_blank" class="inline-block bg-lanna-brick hover:bg-[#a0482d] text-white font-head px-8 py-3 rounded-full text-base font-semibold shadow-lg shadow-lanna-brick/30 transition-all transform hover:scale-105">
+            <a href="https://www.google.com/maps/place/%E0%B8%82%E0%B9%88%E0%B8%A7%E0%B8%87%E0%B8%AB%E0%B8%A5%E0%B8%A7%E0%B8%87%E0%B9%80%E0%B8%A7%E0%B8%B5%E0%B8%A2%E0%B8%87%E0%B9%81%E0%B8%81%E0%B9%89%E0%B8%A7/@18.7909614,98.9839648,354m" target="_blank" class="inline-block bg-lanna-brick hover:bg-[#a0482d] text-white font-head px-8 py-3 rounded-full text-base font-semibold shadow-lg shadow-lanna-brick/30 transition-all transform hover:scale-105">
                 📍 เปิดพิกัดนำทาง (Google Maps)
             </a>
+
+            <p class="mt-6 text-xs text-gray-500 font-body">
+                ข้อมูลโดย กรมศิลปากร
+            </p>
         </section>
 
     </div>
