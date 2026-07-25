@@ -56,9 +56,15 @@
         </a>
     </div>
 
-    <!-- รูปภาพปก (Hero Image) -->
+    <!-- รูปภาพปก (Hero Image) - สไตล์ Classic Brown -->
     <div class="h-64 bg-lanna-text relative w-full overflow-hidden">
-        <img src="https://images.unsplash.com/photo-1603512891963-12e3e5361099?q=80&w=800&auto=format&fit=crop" class="w-full h-full object-cover opacity-70 grayscale-[30%]" alt="กำแพงอิฐเวียงแก้ว">
+        <!-- คืนชีพความคลาสสิก: ดรอป opacity และใส่ sepia -->
+        <img src="WiangKaew_header.jpg" class="w-full h-full object-cover opacity-60 sepia-[30%] grayscale-[20%]" alt="ภาพขุดค้นข่วงหลวงเวียงแก้ว">
+
+        <!-- ชั้นฟิลเตอร์สีน้ำตาลอิฐ (Multiply Overlay) เพิ่มความขลัง -->
+        <div class="absolute inset-0 bg-lanna-text/30 mix-blend-multiply"></div>
+
+        <!-- ไล่สี Gradient ด้านล่างให้กลืนกับพื้นหลังกระดาษ -->
         <div class="absolute inset-0 bg-gradient-to-t from-lanna-bg via-transparent to-transparent"></div>
     </div>
 
@@ -72,7 +78,7 @@
     <!-- ==================== ส่วนเนื้อหาหลัก ==================== -->
     <div class="px-6 mt-8 space-y-8">
 
-        <!-- Section 1: บทนำ 1 -->
+        <!-- Section 1: บทนำ -->
         <section>
             <h3 class="font-head text-xl font-semibold text-lanna-brick mb-3 flex items-center justify-center">
                 <span class="text-lanna-gold mr-2">✤</span> ศูนย์กลางราชวงศ์มังราย <span class="text-lanna-gold ml-2">✤</span>
@@ -81,6 +87,16 @@
                 <strong class="text-lanna-text font-semibold">“เวียงแก้ว”</strong> ตั้งอยู่ในกำแพงเมืองเชียงใหม่ ด้านทิศเหนือของเมือง ในพื้นที่ตำบลพระสิงห์ อำเภอเมืองเชียงใหม่ จังหวัดเชียงใหม่ พื้นที่นี้เป็นพระราชวังของราชวงศ์มังรายแห่งล้านนา สร้างขึ้นราวต้นพุทธศตวรรษที่ ๑๙ แผนผังแบ่งเป็นสองส่วน คือวังชั้นนอก (ด้านตะวันออก) และวังชั้นใน (ด้านตะวันตก) วังชั้นในแบ่งออกเป็นวังส่วนเหนือและส่วนใต้
             </p>
         </section>
+
+        <!-- รูปแผนที่ผังเมืองเก่า -->
+        <figure class="mt-6 text-center">
+            <div class="p-2 border border-lanna-gold/50 rounded-lg bg-white/40 shadow-sm">
+                <img src="cm_plan.jpg" alt="แผนผังเมืองเชียงใหม่เก่า แสดงตำแหน่งเวียงแก้ว" class="w-full h-auto rounded mix-blend-multiply opacity-90">
+            </div>
+            <figcaption class="text-xs text-gray-500 mt-2 font-body tracking-wide">
+                แผนผังเมืองเชียงใหม่ แสดงตำแหน่งข่วงหลวงเวียงแก้ว (พื้นที่แรเงา)
+            </figcaption>
+        </figure>
 
         <!-- Section 2: การขุดค้นพบ -->
         <div class="border-lanna p-5 bg-white/60 relative rounded-lg">

@@ -58,7 +58,13 @@
 
     <!-- Hero Image -->
     <div class="h-64 bg-lanna-text relative w-full overflow-hidden">
-        <img src="https://images.unsplash.com/photo-1603512891963-12e3e5361099?q=80&w=800&auto=format&fit=crop" class="w-full h-full object-cover opacity-70 grayscale-[30%]" alt="Wiang Kaew Brick Wall">
+        <!-- Restore Classic Brown Filter -->
+        <img src="WiangKaew_header.jpg" class="w-full h-full object-cover opacity-60 sepia-[30%] grayscale-[20%]" alt="Wiang Kaew Brick Wall">
+
+        <!-- Brown Overlay for Mood -->
+        <div class="absolute inset-0 bg-lanna-text/30 mix-blend-multiply"></div>
+
+        <!-- Gradient overlay -->
         <div class="absolute inset-0 bg-gradient-to-t from-lanna-bg via-transparent to-transparent"></div>
     </div>
 
@@ -81,6 +87,16 @@
                 <strong class="text-lanna-text font-semibold">“Wiang Kaew”</strong> is located in Chiang Mai city wall, almost in the middle of the city, in Phra Sing Subdistrict. The site was the royal palace of Mangrai Dynasty which ruled Lanna Kingdom between the 13th – 16th centuries C.E.
             </p>
         </section>
+
+        <!-- Old City Plan Map -->
+        <figure class="mt-6 text-center">
+            <div class="p-2 border border-lanna-gold/50 rounded-lg bg-white/40 shadow-sm">
+                <img src="cm_plan.jpg" alt="Old Chiang Mai City Plan showing Wiang Kaew" class="w-full h-auto rounded mix-blend-multiply opacity-90">
+            </div>
+            <figcaption class="text-xs text-gray-500 mt-2 font-body tracking-wide">
+                Old Chiang Mai city plan indicating the location of Wiang Kaew (shaded area)
+            </figcaption>
+        </figure>
 
         <!-- Section 2: Archaeological Discoveries -->
         <div class="border-lanna p-5 bg-white/60 relative rounded-lg">
